@@ -1,6 +1,6 @@
-# PyMCP – универсальный MCP сервер на Python
+# MCP_server_Python – универсальный MCP сервер на Python
 
-**PyMCP** — лёгкий и универсальный сервер MCP, который позволяет добавлять инструменты для LM Studio. Поддерживает:
+**MCP_server_Python** — лёгкий и универсальный сервер MCP, который позволяет добавлять инструменты для LM Studio. Поддерживает:
 
 * Поиск и парсинг страниц
 * Выполнение произвольного Python кода
@@ -9,7 +9,7 @@
 ## Структура проекта
 
 ```
-pymcp/
+mcp_server_python/
 ├── pymcp.py          # основной сервер MCP
 ├── README.md
 ├── requirements.txt  # зависимости
@@ -28,8 +28,8 @@ pymcp/
 1. Клонируем репозиторий:
 
 ```bash
-git clone https://github.com/yourusername/pymcp.git
-cd pymcp
+git clone https://github.com/sharonsky94/mcp_server_python.git
+cd mcp_server_python
 ```
 
 2. Создаём виртуальное окружение и активируем его:
@@ -59,9 +59,9 @@ pip install -r requirements.txt
 {
   "mcpServers": {
     "mcp-server-python": {
-      "command": "/path/to/pymcp/.venv/bin/python",
+      "command": "/path/to/mcp_server_python/.venv/bin/python",
       "args": [
-        "/path/to/pymcp/pymcp.py"
+        "/path/to/mcp_server_python/pymcp.py"
       ]
     }
   }
