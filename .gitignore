@@ -1,2 +1,10 @@
 tools/__pycache__/__init__.cpython-313.pyc
 tools/__pycache__/search.cpython-313.pyc
+__pycache__/mcp_api.cpython-313.pyc
+__pycache__/pymcp.cpython-313.pyc
+util/__pycache__/http.cpython-313.pyc
+util/__pycache__/parser.cpython-313.pyc
+tools/__pycache__/fetch.cpython-313.pyc
+tools/__pycache__/install.cpython-313.pyc
+tools/__pycache__/pyexec.cpython-313.pyc
+util/__pycache__/logger.cpython-313.pyc
