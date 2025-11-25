@@ -1,9 +1,10 @@
 from mcp_api import tool
 from util.http import get
+from bs4 import BeautifulSoup
 
 @tool(
     name="fetch",
-    description="Fetches the content of a given URL.",
+    description="Fetches web page content and returns only plain text (without HTML tags).",
     inputSchema={
         "type": "object",
         "properties": {
@@ -13,5 +14,11 @@ from util.http import get
     }
 )
 def tool_fetch(url: str):
-    content = get(url)
-    return {"url": url, "content": content}
+    html = get(url)
+    
+    # Парсим HTML и извлекаем чистый текст
+    soup = BeautifulSoup(html, "html.parser")
+    plain_text = soup.get_text(separator='\n', strip=True)
+    
+    return {"url": url, "text": plain_text}
+

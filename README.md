@@ -45,6 +45,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+4. Проверка:
+```bash
+echo '{"jsonrpc":"2.0","id":1,"method":"initialize"}' | /path/to/mcp_server_python/.venv/bin/python /path/to/mcp_server_python/pymcp.py
+```
+
 ## Настройка LM Studio
 
 Добавьте MCP сервер в файл:
