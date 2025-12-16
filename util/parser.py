@@ -17,6 +17,10 @@ def parse_ddg_lite(html: str, limit: int = 5):
     for a in soup.select("a.result-link"):
         original_url = a.get("href")
         
+        # Внутри цикла после получения original_url
+        if "&rut=" in original_url:
+            original_url = original_url.split("&rut=")[0]
+
         # Если это перенаправление DuckDuckGo, извлекаем оригинальный URL
         if "/l/?uddg=" in original_url:
             # Извлекаем значение uddg

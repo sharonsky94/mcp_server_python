@@ -2,7 +2,7 @@
 from mcp_api import TOOLS, send_response
 import sys
 import json
-from tools import search, fetch, pyexec, install  # noqa: F401
+from tools import search, fetch, pyexec, install, help, console  # noqa: F401
 from util.logger import log
 
 def run_server():

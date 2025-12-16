@@ -9,3 +9,8 @@ tools/__pycache__/install.cpython-313.pyc
 tools/__pycache__/pyexec.cpython-313.pyc
 util/__pycache__/logger.cpython-313.pyc
 pymcp.log
+tools/__pycache__/agent_filter.cpython-313.pyc
+tools/__pycache__/console.cpython-313.pyc
+tools/__pycache__/file_inspect.cpython-313.pyc
+tools/__pycache__/file_inspector.cpython-313.pyc
+tools/__pycache__/help.cpython-313.pyc
